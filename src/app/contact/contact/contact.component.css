@@ -1,0 +1,63 @@
+.section-contact h2 {
+    color: #a5b4fc;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section-contact{
+    background-image: url('/labourer-1436010.jpg');
+    background-size: cover; /* Couvre toute la zone */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white !important;
+    margin-top: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+
+  @media screen and (max-width: 996px) {
+    .section-contact {
+        padding: 50px 20px;
+      }
+    
+      .form-nom-email {
+        flex-direction: column;
+        gap: 0;
+      }
+  }

@@ -9,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  contactForm = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  submitForm() {
+    console.log('Form submitted:', this.contactForm);
+    // Ajouter une logique de traitement des formulaires ici
+  }
+
 }

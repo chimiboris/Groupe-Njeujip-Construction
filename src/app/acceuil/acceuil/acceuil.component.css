@@ -1,0 +1,224 @@
+
+.accueil-service1{
+  padding: 60px;
+  width: 100%;
+  background-size: cover; /* Couvre toute la zone*/ 
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5); /* Noir avec 50% d'opacité */
+  background-image: url("/istockphoto-1733051131-1024x1024.jpg") !important;
+}
+.accueil-photos {
+  background-color: rgb(241, 241, 241);
+  padding: 80px;
+  width: 100%;
+  }
+   
+  .carousel-item img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+  
+  .accueil-photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+  } 
+
+  .accueil-introduction h2 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .accueil-service1 div {
+    display: flex;
+    /*flex-direction: row;*/
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+ 
+  .card-body{
+    display: flex;
+    flex-direction: column;
+  } 
+  
+  .accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+  }
+
+  .img{
+    height: auto;
+  }
+  
+  .accueil-introduction h1 {
+    margin-bottom: 20px;
+  }
+  
+  .accueil-introduction p {
+    margin-bottom: 20px;
+  }
+  
+  .accueil-introduction div {
+    padding-right: 50px;
+  }
+  
+  .section-contact h2 {
+    color: #a5b4fc;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .section-contact{
+    background-image: url('/labourer-1436010.jpg');
+    background-size: cover; /* Couvre toute la zone */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white !important;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 996px) {
+    .accueil-introduction {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .accueil-introduction div {
+      padding-right: 0;
+      text-align: center;
+      order: 2;
+    }
+  
+    .accueil-introduction img {
+      order: 1;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .accueil-photos {
+      padding: 20px;
+    }
+  
+    .accueil-photos div {
+      flex-direction: column;
+    }
+    
+    .accueil-service1 div {
+      flex-direction: column;
+    }
+  
+    .section-contact {
+      padding: 50px 20px;
+    }
+  
+    .form-nom-email {
+      flex-direction: column;
+      gap: 0;
+    }
+
+  }
+  
+  .grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+  }
+  
+  .grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+  }
+  
+  .grid-paysages img,
+  .grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .lien-conteneur-photo {
+    position: relative;
+  }
+  
+  .photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 996px) {
+    .grid-paysages {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .grid-portraits {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+  
+  img:hover{
+    opacity: 1;
+  }
+  

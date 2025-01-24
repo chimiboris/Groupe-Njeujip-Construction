@@ -1,0 +1,99 @@
+header{
+  height: 100px;
+}
+
+.etude-et-conception {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+  }
+  .conception{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 50px;
+    color: black;
+    /* background-color: rgb(241, 241, 241); */
+  }
+
+  .img{
+    height: auto;
+    margin-block: auto;
+  }
+  .img1{
+    height: auto;
+    margin-block: auto;
+  }
+  .img3{
+    height: 700px;
+    width: 700px;
+  }
+  .section{
+    margin-top: 100px;
+  }
+
+  .etude-et-conception h1 {
+    margin-bottom: 20px;
+  }
+  .conception h1{
+    margin-bottom: 20px;
+  }
+  
+  .etude-et-conception p {
+    margin-bottom: 20px;
+  }
+  .conception p{
+    margin-bottom: 20px;
+  }
+
+  .introduction{
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 996px) {
+    .title{
+      margin-top: 250px;
+    }
+    .etude-et-conception {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .conception{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .etude-et-conception div {
+      padding-right: 0;
+      text-align: center;
+      order: 2;
+    }
+    .conception div{
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+    }
+  
+    .etude-et-conception img {
+      order: 1;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .conception img{
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .container{
+      margin-top: 100px;
+    }
+  }
