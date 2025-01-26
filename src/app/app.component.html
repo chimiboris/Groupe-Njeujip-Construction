@@ -19,9 +19,10 @@
     </div>
   </nav>
 
+
   <nav class="navbar bg-body-tertiary fixed-top d-lg-none">
     <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+      
       <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,22 +31,22 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body text-white">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" [routerLink] = "['/accueil']" [routerLinkActive] = "['active']" class="pointer">Accueil</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" data-bs-dismiss="offcanvas" aria-label="Close" aria-current="page" [routerLink] = "['/accueil']" [routerLinkActive] = "['active']" class="pointer" >Accueil</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['/nos-services']" [routerLinkActive] = "['active']" class="pointer">Nos services</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" data-bs-dismiss="offcanvas" [routerLink] = "['/nos-services']" [routerLinkActive] = "['active']" class="pointer" >Nos services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['/portfolio']" [routerLinkActive] = "['active']" class="pointer">Portfolio</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" data-bs-dismiss="offcanvas" [routerLink] = "['/portfolio']" [routerLinkActive] = "['active']" class="pointer" >Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['/a-propos']" [routerLinkActive] = "['active']" class="pointer">À propos</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" data-bs-dismiss="offcanvas" [routerLink] = "['/a-propos']" [routerLinkActive] = "['active']" class="pointer" >À propos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['/contact']" [routerLinkActive] = "['active']" class="pointer">Contact</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" data-bs-dismiss="offcanvas" [routerLink] = "['/contact']" [routerLinkActive] = "['active']" class="pointer" >Contact</a>
             </li>
           </ul>
         </div>
@@ -87,7 +88,7 @@
                           <div class="col-sm-7 div1">
                               <a
                               class="nav-link lien-footer"
-                              [routerLink]="['/home']"
+                              [routerLink]="['/a-propos']"
                               [routerLinkActive]="['active']"
                               [routerLinkActiveOptions]="{ exact: true }"
                             >
@@ -98,7 +99,7 @@
                           <div class="col-sm-7 mt-4 div2">
                               <a
                                   class="nav-link lien-footer"
-                                  [routerLink]="['/home']"
+                                  [routerLink]="['/contact']"
                                   [routerLinkActive]="['active']"
                                   [routerLinkActiveOptions]="{ exact: true }"
                               >Laissez vos avis
@@ -108,7 +109,7 @@
                   
                       <div class="d-flex col-md-6 mt-4">
                           <div class="mx-4">
-                              <a class="">
+                              <a class="" href="https://www.facebook.com/profile.php?id=61572663174551">
                                   <i class="fa-brands fa-facebook-f icone"></i>
                               </a>
                           </div>
@@ -159,7 +160,7 @@
                       <div class="mx-2 mt-3 col-md-10">
                           <a
                               class="nav-link lien-footer"
-                              href="mailto:chimiboris7&#64;gmail.com"
+                              href="mailto:groupenjeujipconstruction10&#64;gmail.com"
                           >
                           <i class="fa-regular fa-envelope-open"></i>
                           groupenjeujipconstruction10&#64;gmail.com
@@ -182,5 +183,15 @@
           </div>
   
   </div>
-      
+  
   </footer>
+
+  <!-- app.component.html -->
+<button *ngIf="showScrollToTop" (click)="scrollToTop()" class="scroll-to-top" [class.visible]="showScrollToTop">
+  <i class="fas fa-arrow-up"></i> <!-- Icône de la flèche vers le haut -->
+</button>
+
+
+
+
+  

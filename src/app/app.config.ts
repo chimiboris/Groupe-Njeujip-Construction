@@ -1,6 +1,7 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 
+
 //import { routes } from './app.routes';
 import { ContactComponent } from './contact/contact/contact.component';
 import { AProposComponent } from './a-propos/a-propos/a-propos.component';
@@ -42,5 +43,8 @@ export const routes: Routes = [
 ];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+  ],
 };

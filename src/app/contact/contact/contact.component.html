@@ -1,4 +1,66 @@
+
 <section id="contact" class="section-contact">
+    <h2 class="text-white">Parlons de votre projet</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-nom-email">
+        <div class="form-column">
+          <label for="nom">Nom</label>
+          <input
+            type="text"
+            id="nom"
+            formControlName="nom"
+            placeholder="Entrez votre nom"
+          />
+          <div *ngIf="contactForm.get('nom')?.invalid && contactForm.get('nom')?.touched">
+            <small *ngIf="contactForm.get('nom')?.errors?.['required']">Nom requis</small>
+            <small *ngIf="contactForm.get('nom')?.errors?.['minlength']">
+              Le nom doit contenir au moins 3 caractères.
+            </small>
+          </div>
+        </div>
+        <div class="form-column">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            formControlName="email"
+            placeholder="Entrez votre email"
+          />
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+            <small *ngIf="contactForm.get('email')?.errors?.['required']">Email requis</small>
+            <small *ngIf="contactForm.get('email')?.errors?.['email']">
+              Entrez un email valide.
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="form-message">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          rows="10"
+          placeholder="Expliquez votre projet..."
+        ></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+          <small *ngIf="contactForm.get('message')?.errors?.['required']">Message requis</small>
+          <small *ngIf="contactForm.get('message')?.errors?.['minlength']">
+            Le message doit contenir au moins 10 caractères.
+          </small>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="cta" [disabled]="contactForm.invalid">
+          Envoyer
+        </button>
+      </div>
+    </form>
+  </section>
+  
+
+
+
+<!-- <section id="contact" class="section-contact">
     <h2>Parlons de votre projet</h2>
     <form method="get" action="">
         <div class="form-nom-email">
@@ -15,4 +77,4 @@
         <textarea name="message" id="message" rows="10"></textarea>
         <input type="submit" value="ENVOYER" class="cta" />
     </form>
-</section>
+</section> -->

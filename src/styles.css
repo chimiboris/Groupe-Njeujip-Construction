@@ -1,3 +1,7 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'material-icons/iconfont/material-icons.css';
+
+
 /* You can add global styles to this file, and also import other style files */
 
 * {
@@ -7,8 +11,6 @@
   body {
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
-    /*background-color: #1f2039 !important;*/
-    /*background-image: url("/public/istockphoto-1733051131-1024x1024.jpg") !important;*/
   }
   
   .btn{
@@ -24,11 +26,6 @@
   }
   .img3:hover{
     background-color: rgba(0, 0, 0, 0.7) !important;
-  }
-
-  a {
-    color: #242424;
-    text-decoration: none;
   }
   
   em {
@@ -65,9 +62,10 @@
     padding: 20px 30px;
     color: black;
 }
-  
+
+
   a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
   
   .cta:hover {
@@ -98,6 +96,11 @@
   nav a {
     margin-left: 30px;
   }
+
+  .offcanvas-body{
+    background-color: rgb(26, 25, 25);
+    color: white;
+  }
   
   @media screen and (max-width: 996px) {
     header nav {
@@ -126,6 +129,7 @@
     nav a {
       margin-left: 10px;
       margin-right: 10px;
+      color: white !important;
     }
   }
 
